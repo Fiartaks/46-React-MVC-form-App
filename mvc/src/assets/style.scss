@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #585757;
+    color: #ffffff;
+}
+//header
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+    a{
+        color: gold;
+        text-decoration: none;
+    }
+    .active{
+        display: none;
+    }
+}
+//liste sayfasi
+.container{
+    width: 70vw;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .post{
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px ;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        .info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+               color: gold;
+               cursor: pointer; 
+            }
+        }
+    }
+}
+
+//Ekleme sayfasi
+form{
+    width: 70vw;
+    background-color: black;
+    max-width: 900px;
+    min-height: 70vh;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 50px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        text-align: center;
+    }
+    fieldset{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    
+    input{
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+    textarea{
+        resize: vertical;
+        max-height: 200px;
+        min-height: 100px;
+        padding: 10px;
+        outline: none;
+        border-radius: 10px;
+    }
+}
+button{
+    background-color: gold;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+}
+
+//pop up
+.wrapper{
+    position: fixed;
+    background-color: rgba(128,128,128,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+   left: 0;
+   display: grid;
+   place-items: center;
+    .popup{
+     background-color: white;
+     height: 80%;
+     width: 70%;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     color: black;
+     gap: 20px;
+     .btn-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4{
+            color: black;
+        }
+        span{
+            color: gold;
+        }
+        button{
+            border: none;
+            background-color: crimson;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+     }
+    }
+
+}
